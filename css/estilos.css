@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/* mi paleta de rgb a utilizar
+rgb(125, 90, 90)
+rgb(241, 209, 209)
+rgb(243, 225, 225)
+rgb(250, 242, 242)
+rgb(255, 240, 240)
+rgb(235, 212, 212)
+rgb(131, 88, 88)
+rgb(70, 51, 51)
+*/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #f1d1d1;
+}
+
+header h1 {
+  color: #463333;
+  font-style: normal;
+  font-family: "Dancing Script";
+  font-weight: 250;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  z-index: 5;
+}
+
+
+.main-historia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-historia__titulo {
+  display: flex;
+  flex: 2;
+  color: #463333;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.main-historia__parrafo {
+  display: flex;
+  flex: 2;
+  min-width: 250px;
+  padding: 20px;
+  color: #463333;
+
+  text-transform: none;
+  font-size: 20px;
+}
+
+
+
+.dolce {
+  width: 50%;
+  margin: 60px 20px 20px 20px;
+}
+
+.navegador {
+  position: absolute;
+  top: 100px;
+  text-align: right;
+  font-size: 19px;
+  width: 100%;
+  background-image: linear-gradient(to left, white, #e7ccd1);
+}
+
+.navegador__link,
+.redes__link {
+  color: #835858;
+  text-decoration: none;
+  font-family: 'Arima Madurai', cursive;
+  margin: 0px 10px;
+}
+
+.navegador--activo {
+  color: #af6098;
+  font-size: 25px;
+}
+
+.navegador__link:hover,
+.redes__link:hover {
+  color: #463333;
+  font-size: 20px;
+}
+
+/*Empieza mi submenu*/
+/*termina mi submenu*/
+/*.centro a {
+    color: rgb(131, 88, 88);
+    text-decoration: none;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 16px;
+    border: 1px solid;
+    border-style: outset;
+    background-color: rgb(223, 182, 209);
+    padding: 4px;
+}*/
+.centro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  grid-area: centro;
+  margin: 100px 0;
+}
+
+.centro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redes {
+  grid-area: footer;
+  background-image: linear-gradient(white, #e7ccd1);
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+
+.redes__link {
+  margin: 0;
+  font-size: 17px;
+}
+
+.redes__link:hover {
+  color: black;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 100px;
+}
+
+body {
+  background-color: #FFF0F0;
+}
+
+/*empieza estilo tabla*/
+.mainProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  background-color: #faf2f2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+table td {
+  border: 1px solid black;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+table ol {
+  list-style: none;
+}
+
+/*termina estilo tabla*/
+/*empieza estilos carrusel*/
+.carousel {
+  width: 500px;
+}
+
+.d-md-block {
+  background-image: linear-gradient(to left, white, #e7ccd1);
+  height: 100px;
+  text-align: center;
+}
+
+.d-md-block p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.d-md-block h5 {
+  color: #835858;
+}
+
+/*termina estilos carrusel*/
+.bodyEventos {
+  background-color: #faf2f2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgba(255, 240, 240, 0.466);
+  grid-area: header;
+}
+
+hr {
+  border-color: #5a7d5c;
+  margin: 20px 0 20px 0;
+}
+
+header img {
+  position: relative;
+  width: 200px;
+  left: 30%;
+  margin-bottom: 100px;
+  z-index: 5;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+fieldset {
+  box-shadow: rgba(238, 162, 162, 0.8) 0px 0px 50px;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.boton {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #eba4a4;
+  box-shadow: rgba(39, 3, 3, 0.8) 0px 0px 3px;
+}
+
+legend {
+  font-size: 20px;
+  background-color: #e9e7eb;
+}
+
+.contacto {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-family: krub;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+}
+
+/*submenu*/
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+.dropdown {
+  display: inline-block;
+  font-size: 19px;
+  font-family: 'Arima Madurai';
+  color: #835858;
+}
+
+/*fin del submenu*/
+.cumpleaños img {
+
+  align-content: space-between;
+}
+
+.cumpleaños__imagen:hover {
+  transform: scale(1.1);
+  border: 2px solid #835858;
+}
+
+#galeria .col-lg-4 {
+  padding: 15px;
+  margin: 0 !important
+}
+
+/*grids*/
+#contenedor {
+  display: grid;
+  grid-template-areas: "header"
+    "centro"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 200px auto 100px;
+}
+
+/*grid Historia*/
+#contenedorHistoria {
+  display: grid;
+  grid-template-areas: "header"
+    "centro"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+
+/*grid Productos*/
+#contenedorProductos {
+  display: grid;
+  grid-template-areas: "header"
+    "centro"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+
+/*grid Contactos*/
+#contenedorContactos {
+  display: grid;
+  grid-template-areas: "header"
+    "centro"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 200px auto 100px;
+}
+
+/*grid Participaciones*/
+#contenedorParticipaciones {
+  display: grid;
+  grid-template-areas: "header"
+    "centro"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+
+/*media Queries*/
+@media only screen and (max-width: 1024px) {
+  h1 {
+    left: 100px;
+  }
+
+  header img {
+    left: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contenedor {
+    grid-template-columns: 100%;
+    grid-template-rows: 350px auto auto;
+  }
+
+  h1 {
+    left: 10px;
+    font-size: 20px;
+    top: 50px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  .centro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0;
+  }
+}
